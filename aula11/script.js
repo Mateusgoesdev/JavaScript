@@ -3,7 +3,7 @@ let num2 = window.prompt('Digite outro número')
 let resultado = Number(num1) + Number(num2)
 const r = window.confirm('Deseja ver o resultado?')
 if (r == true) {
-    window.alert(resultado)
+    window.alert(`O resultado foi ${resultado}`)
 }
 else {
     window.alert('ok, até mais')
