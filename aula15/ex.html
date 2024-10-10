@@ -12,17 +12,9 @@
 </style>
 </head>
 <body>
-<h1>Seu Número é</h1>
+<h1>Seu Número é <span id="titulo">0</span></h1>
+<div id="texto">Texto</div>
 
-<script>
-    const num = window.prompt('Digite um número')
-    document.h1.innerHTML = `Seu número é ${num} <br>`
-    document.body.innerHTML += `Raiz quadrada: ${num ** 0.5} <br>`
-    document.body.innerHTML += `${num} é inteiro: ${Number.isNaN(num)} <br>`
-    document.body.innerHTML += `É NaN: ${Number.isInteger(num)} <br>`
-    document.body.innerHTML += `Arredondando para baixo: ${Math.floor(num)} <br>`
-    document.body.innerHTML += `Arredondando para cima: ${Math.ceil(num)} <br>`
-    document.body.innerHTML += `com duas casas decimais: ${num.ToFixed(2)}`
-</script>
+<script src="ex.js"></script>
 </body>
 </html>
