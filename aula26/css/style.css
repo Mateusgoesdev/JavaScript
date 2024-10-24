@@ -59,3 +59,15 @@ form input:focus {
 form button:hover {
     background-color: var(--primary-color-darker);
 }
+
+.paragrafo-resultado {
+    background-color: aquamarine;
+    padding: 10px 20px;
+}
+
+.bad {
+    background-color: rgb(240, 89, 89);
+    padding: 10px 20px;
+}
+
+
