@@ -1,5 +1,6 @@
 //  capturar o evento de submit do formulário
 const form= document.getElementById('formulario')
+
 form.addEventListener('submit', function(e) {
     e.preventDefault()
     const inputPeso = e.target.querySelector('#peso')
@@ -30,17 +31,17 @@ form.addEventListener('submit', function(e) {
 function getNivelImc(imc) {
 
     if (imc >= 39.9){
-        return '(Obesidade grau 3)'
+        return 'Obesidade grau 3'
     } if (imc >= 34.9) {
-        return '(Obesidade grau 2)'
+        return 'Obesidade grau 2'
     } if (imc >= 29.9) {
-        return '(Obesidade grau 1)'
+        return 'Obesidade grau 1'
     } if (imc >= 24.9) {
-        return '(Sobrepeso)'
+        return 'Sobrepeso'
     } if (imc >= 18.5) {
-        return '(Peso normal)'
+        return 'Peso normal'
     }  if (imc < 18.5) {
-        return '(Abaixo do peso)'
+        return 'Abaixo do peso'
     }
 }
 
@@ -59,11 +60,12 @@ function setResultado (msg, isValid) {
     Resultado.innerHTML = ''
 
     const p = criaP()
+
     if (isValid) {
         p.classList.add('paragrafo-resultado')
     } else {
         p.classList.add('bad')
     }
     p.innerHTML = msg
-    Resultado.appendChild.add(p)
+    Resultado.appendChild(p)
 }
